@@ -1,0 +1,30 @@
+package Integer;
+
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public void createLinkedList(int terms)
+	{
+		Node record=new Node(data);
+		if(head==null)
+		{
+			head=record;
+			head.next=head;
+			return;
+		}
+		else
+		{
+			Node move=head;
+			while(move.getNext()!=null)
+				move=move.getNext();
+			move.setNext(record);
+			record.setPrev(move);
+		}
+	}
+	
+
+}

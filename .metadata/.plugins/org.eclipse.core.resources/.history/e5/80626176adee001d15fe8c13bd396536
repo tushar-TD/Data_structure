@@ -1,0 +1,9 @@
+package StackPostFixed;
+
+public class PostFixedDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

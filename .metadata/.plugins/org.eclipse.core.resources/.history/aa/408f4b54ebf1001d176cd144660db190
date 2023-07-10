@@ -1,0 +1,15 @@
+package Integer;
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public void createLinkedList()
+	{
+		
+	}
+	
+
+}

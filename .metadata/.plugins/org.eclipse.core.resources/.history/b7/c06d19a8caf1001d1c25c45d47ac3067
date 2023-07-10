@@ -1,0 +1,43 @@
+package IntegerDoubly;
+
+import java.util.Scanner;
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public void addEnd(int data)
+	{
+		Node record=new Node(data);
+		if(head==null)
+		{
+			head=record;
+			return;
+		}
+		Node move=head;
+		while(move.getNext()!=null)
+			move=move.getNext();
+		move.setNext(record);
+		record.setPrev(move);
+	}
+	public void createLinkedList(int terms)
+	{
+		int no;
+		Scanner sc=new Scanner(System.in);
+		for(int i=1;i<=terms;i++)
+		{
+			System.out.println("Enter Data:");
+			no=sc.nextInt();
+			addEnd(no);
+		}
+	}
+	public void display()
+	{
+		Node move=head;
+		while(move.getNext()!=null)
+			System.out.println(move);
+	}
+
+}

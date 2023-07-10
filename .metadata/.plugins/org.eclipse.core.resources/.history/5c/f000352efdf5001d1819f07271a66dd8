@@ -1,0 +1,120 @@
+package Integer;
+
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public void addEnd(int data)
+	{
+		Node record=new Node(data);
+		if(head==null)
+		{
+			head=record;
+			head.next=head;
+			return;
+		}
+		else
+		{
+			Node move=head;
+			while(move.next!=head)
+				move=move.next;
+			move.next=record;
+			record.next=head;
+		}
+	}
+	public void createLinkedList(int terms)
+	{
+		for(int i=1;i<=terms;i++)
+			addEnd(i);
+	}
+	public void createIntegerLinkedList(int terms)
+	{
+		for(int i=1;i<=terms;i++)
+		{
+			Node record=new Node(i);
+			if(head==null)
+			{
+				head=record;
+				head.next=head;
+			}
+			else
+			{
+				Node move=head;
+				while(move.next!=head)
+					move=move.next;
+				move.next=record;
+				record.next=head;
+			}
+		}
+	}
+	public void insert(int pos,int data)
+	{
+		Node record=new Node(data);
+		if(head==null)
+		{
+			head=record;
+			head.next=head;
+		}
+		else if(pos==1)
+		{
+		Node move=head;
+		while(move.next!=head)
+			move=move.next;
+		move.next=record;
+		record.next=head;
+		}
+		for(int i=2;i<pos-1;i++)
+			move=move.next;
+	}
+	public void deleteNode(int data)
+	{
+		Node del=null;
+		Node record=new Node(data);
+		if(head==null)
+		{
+			record=head;
+			//return null;
+		}
+		else if(head.data==data)
+		{
+			del=head;
+			Node move=head;
+			while(move.next!=head)
+				move=move.next;
+			move.next=del.next;
+			head=head.next;
+			//return del;
+		}
+		Node move=head;
+		while(move.next!=head)
+			{
+				if(move.next.data==data)
+				{
+					del=move.next;
+					move.next=del.next;
+					//return del;
+				}
+				move=move.next;
+			}
+			//return null;
+		}
+	public void display()
+	{
+		Node move=head;
+		while(move.next!=head)
+			{
+				System.out.print(move);
+				move=move.next;
+			}
+		if(move.next==head)
+			{
+				System.out.print(move);
+				move=move.next;
+			}
+		System.out.println();
+	}
+
+}

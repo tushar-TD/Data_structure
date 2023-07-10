@@ -1,0 +1,45 @@
+package Integer;
+
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public void addEnd(int data)
+	{
+		//int data=0;
+		Node record=new Node(data);
+		if(head==null)
+		{
+			head=record;
+			head.next=head;
+			return;
+		}
+		else
+		{
+			Node move=head;
+			while(move.next!=null)
+				move=move.next;
+			move.next=record;
+			record.next=head;
+		}
+	}
+	public void createLinkedList(int terms)
+	{
+		for(int i=1;i<=terms;i++)
+			addEnd(i);
+	}
+	public void display()
+	{
+		Node move=head;
+		while(move!=null)
+			{
+				System.out.print(move);
+				move=move.getNext();
+			}
+		System.out.println();
+	}
+
+}

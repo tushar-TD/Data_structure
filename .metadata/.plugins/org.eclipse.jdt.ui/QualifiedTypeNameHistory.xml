@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="IntegerQueue.QueueException"/>
+    <fullyQualifiedTypeName name="DemoGiven.QueueException"/>
+    <fullyQualifiedTypeName name="IntegerQueue.MyQueue"/>
+    <fullyQualifiedTypeName name="CustomerQueue.CustomerQueue"/>
+    <fullyQualifiedTypeName name="MyQueue"/>
+    <fullyQualifiedTypeName name="CircularQueueFixed.MyQueue"/>
+    <fullyQualifiedTypeName name="EmpBubbleSort.Employee"/>
+    <fullyQualifiedTypeName name="Integer.LinkedList"/>
+    <fullyQualifiedTypeName name="String.LinkedList"/>
+    <fullyQualifiedTypeName name="SortedLinkedList.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="MergeTwoLinkedList.LinkedList"/>
+    <fullyQualifiedTypeName name="IntegerDoubly.LinkedList"/>
+    <fullyQualifiedTypeName name="Integer.DynamicStack"/>
+    <fullyQualifiedTypeName name="OddEven.DynamicStack"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="DQ.DynamicQueue"/>
+    <fullyQualifiedTypeName name="Book.Book"/>
+    <fullyQualifiedTypeName name="BST.BinarySearchTree"/>
+    <fullyQualifiedTypeName name="AdvanceAssignment.LinkedList"/>
+    <fullyQualifiedTypeName name="AdjanancyList.LinkedList"/>
+    <fullyQualifiedTypeName name="QueueUsingTwoStacks.MyQueue"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="QueueUsingTwoStacks.MyStack"/>
+    <fullyQualifiedTypeName name="java.awt.DisplayMode"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

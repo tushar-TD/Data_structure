@@ -1,0 +1,27 @@
+package array1;
+
+public class Merg {
+	public static int[] merg(int a[],int b[])
+	{
+		int res[]=new int[a.length+b.length];
+		int k=0;
+		for(int i=0;i<a.length;i++)
+			res[k++]=a[i];
+		for(int i=0;i<b.length;i++)
+			res[k++]=b[i];
+		return res;
+	}
+public static void display(int arr[]) {
+	System.out.println("********************");
+	for(int i=0;i<arr.length;i++)
+		System.out.print(arr [i] + "\t");
+}
+	public static void main(String[] args) {
+		int a[]= {1,2,3,4};
+		int b[]= {11,22,33,44,55};
+		
+		int res[]=merg(a,b);
+		display(res);
+	}
+
+}

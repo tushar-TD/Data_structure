@@ -1,0 +1,7 @@
+package Integer;
+
+public class LinkedList {
+	Node head;
+	public LinkedList(int data)
+
+}

@@ -1,0 +1,19 @@
+package IntegerDoubly;
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public void addEnd(int data)
+	{
+		Node record=new Node(data);
+		
+	}
+	public void createLinkedList(int terms)
+	{
+		
+	}
+
+}

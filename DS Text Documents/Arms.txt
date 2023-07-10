@@ -1,0 +1,35 @@
+public class ArmsStrong {
+	
+	public static void arms()
+	{
+		System.out.println("Armsstrong Numbers:");
+		for(int n=1;n<=10000;n++)
+		{
+			int n1=n;
+			int n2=n;
+			int c=0;
+			int arm=0;
+			while(n1>0)
+			{
+				n1=n1/10;
+				c++;
+			}
+			while(n2>0)
+			{
+				int rem=n2%10;
+				arm=arm+(int)Math.pow(rem, c);
+				n2=n2/10;
+			}
+			if(n==arm)
+				System.out.println(n);
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		arms();
+		
+
+	}
+
+}

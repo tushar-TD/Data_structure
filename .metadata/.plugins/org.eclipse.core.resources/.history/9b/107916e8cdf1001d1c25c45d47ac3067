@@ -1,0 +1,73 @@
+package IntegerDoubly;
+
+import java.util.Scanner;
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public void addEnd(int data)
+	{
+		Node record=new Node(data);
+		if(head==null)
+		{
+			head=record;
+			return;
+		}
+		Node move=head;
+		while(move.getNext()!=null)
+			move=move.getNext();
+		move.setNext(record);
+		record.setPrev(move);
+	}
+	public void createLinkedList(int terms)
+	{
+		int no;
+		Scanner sc=new Scanner(System.in);
+		for(int i=1;i<=terms;i++)
+		{
+			System.out.println("Enter Data:");
+			no=sc.nextInt();
+			addEnd(no);
+		}
+	}
+	public void display()
+	{
+		Node move=head;
+		while(move.getNext()!=null)
+			System.out.println(move);
+		System.out.println();
+	}
+	public void addNode(int pos, int no)
+	{
+		Node record=new Node(no);
+		if(pos==1)
+		{
+			head.setPrev(record);
+			record.setPrev(head);
+			head=record;
+			return;
+		}
+		Node move=head;
+		for(int i=1;i<pos-1;i++)
+			move=move.getNext();
+		record.setNext(move.getNext());
+		if(record.getNext()!=null)
+			record.getNext().setPrev(record);
+		record.setPrev(move);
+		move.setNext(record);
+	}
+	public void printReverse()
+	{
+		Node move=head;
+		while(move.getNext()!=null)
+			move=move.getNext();
+		while(move.getPrev()!=null)
+		{
+			System.out.println(move);
+			move=move.getPrev();
+		}
+	}
+}
